@@ -17,7 +17,7 @@
             } else {
                 var dishes = $scope.dishes.split(',');
                 for (var i=0; i< dishes.length; i++) {
-                    if (dishes[i] == false) {
+                    if (dishes[i] === false) {
                         dishes.splice(i, 1);
                     }
                 }
