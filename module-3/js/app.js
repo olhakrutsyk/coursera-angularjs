@@ -14,9 +14,12 @@
 	function NarrowItDownController(menuSearch) {
 		var controller = this;
 		controller.search = function (input) {
-			menuSearch.getMatchedMenuItems(input).then(function (result) {
-				controller.found = result;
-			});
+			controller.found = [];
+			if (input) {
+				menuSearch.getMatchedMenuItems(input).then(function (result) {
+					controller.found = result;
+				});
+			}
 		};
 		controller.removeItem = function (index) {
 			controller.found.splice(index, 1);
