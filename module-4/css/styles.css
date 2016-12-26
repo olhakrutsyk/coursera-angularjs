@@ -1,0 +1,14 @@
+.main-header {
+  margin-top: 50px;
+  padding: 10px;
+  color: red;
+  box-shadow: 0 0 1px 1px rgba(167, 161, 161, 0.5);
+}
+.category {
+  height: 150px;
+  background-color: #a9dffb;
+  margin: 15px 0;
+  padding: 10px;
+}
+.category-name {
+}
