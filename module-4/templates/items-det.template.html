@@ -1,8 +1,11 @@
-<ul>
-  <h3>({{$ctrl.items.category.short_name}}) {{$ctrl.items.category.name}}</h3>
-  <button ui-sref="categories">All categories</button>
-  <li ng-repeat="item in $ctrl.items.menu_items">
-    <h4>({{item.short_name}}) {{item.name}}</h4>
-    <p>{{item.description}}</p>
-  </li>
-</ul>
+<div class="row">
+  <div class="col-xs-12">
+    <h3 class="category-item">({{$ctrl.items.category.short_name}}) {{$ctrl.items.category.name}}</h3>
+    <button ui-sref="home" class="btn btn-default">Home</button>
+    <button ui-sref="categories" class="btn btn-default">All categories</button>
+    <div class="item" ng-repeat="item in $ctrl.items.menu_items">
+        <h4>({{item.short_name}}) {{item.name}}</h4>
+        <p>{{item.description}}</p>
+    </div>
+  </div>
+</div>

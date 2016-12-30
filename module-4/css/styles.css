@@ -1,14 +1,27 @@
 .main-header {
   margin-top: 50px;
   padding: 10px;
-  color: red;
+  color: #3bb4f3;
   box-shadow: 0 0 1px 1px rgba(167, 161, 161, 0.5);
 }
 .category {
   height: 150px;
+  border: 3px solid #a9dffb;
   background-color: #a9dffb;
   margin: 15px 0;
   padding: 10px;
+  cursor: pointer;
 }
-.category-name {
+.category:hover {
+  border-color: #D4C6C6;
+}
+.category-item {
+  color: #fff;
+  background-color: #3bb4f3;
+  padding: 10px;
+}
+.item {
+  background: #cfe8f0;
+  padding: 10px;
+  margin: 10px 0;
 }
