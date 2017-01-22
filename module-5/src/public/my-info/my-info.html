@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 text-center"
+            ng-if="myInfoCtrl.userInfo">
+            <p>First Name: {{ myInfoCtrl.userInfo.firstname }}</p>
+            <p>Last Name: {{ myInfoCtrl.userInfo.lastname }}</p>
+            <p>Email Address: {{ myInfoCtrl.userInfo.email }}</p>
+            <p>Phone Number: {{ myInfoCtrl.userInfo.phone }}</p>
+
+            <!-- picture, title, description -->
+            <h4>Favourite dish:</h4>
+            <img width="250"
+                 height="150"
+                 ng-src="{{myInfoCtrl.basePath}}/images/{{myInfoCtrl.userInfo.dish}}.jpg"
+                 alt="{{ myInfoCtrl.favoriteDish.name }}">
+            <h4>{{ myInfoCtrl.favoriteDish.name }}</h4>
+            <p>{{ myInfoCtrl.favoriteDish.description }}</p>
+    </div>
+    <div class="col-xs-12 text-center"
+         ng-if="!myInfoCtrl.userInfo">
+      <h1>
+        Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a>
+      </h1>
+    </div>
+</div>
+</div>
